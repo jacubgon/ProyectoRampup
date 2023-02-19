@@ -1,7 +1,14 @@
 *{
     box-sizing: border-box;
 }
+html{scroll-behavior: smooth;}
 
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color:rgb(245, 245, 245);
+   
+}
 h1{
     font-size: 3.5em;
 }
@@ -15,9 +22,170 @@ p{
     font-size: 1.25;
 }
 ul{list-style: none;}
-
-body{
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-;
+li{
+    font-size: 1.25em;
 }
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:rgb(15, 104, 182);
+    background-color:rgb(116, 210, 199);
+}
+button:hover{
+    background-color: rgb(79, 138, 131);
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-corporativo{
+    color:rgb(116, 210, 199);
+}
+header{
+    background-color:rgb(245, 245, 245);
+    max-width: 1400px;
+}
+
+header.logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 3em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+header a:hover{
+    color:rgb(116, 210, 199) ;
+}
+#portada{
+    background-image: url(Recursos/fotoportada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*aqui he probado 1600px, 100% */
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    color:rgba(0, 95, 63, 0.488);
+    font-size: 1.2em;
+    
+    
+}
+#portada h1{
+    color:rgb(247, 247, 247);
+}
+
+#biografia{
+    text-align: center;
+    padding: 100px 50px;
+    background-color:rgb(245, 245, 245);
+
+
+}
+#biografia .container{
+    text-align: center;
+    padding: 200px 10px;
+}
+h2{
+    text-align: center;
+    padding: 100px;
+    font-size: 2em;
+    color:black
+}
+#paises-favoritos{
+    background-color:rgb(245, 245, 245) ;
+    text-align: center;
+    color:antiquewhite
+}
+#paises-favoritos .favoritos{
+padding: 20px 20px;
+margin: 10px;
+
+}
+#paises-favoritos p{
+    display: none;
+
+}
+
+.favoritos:nth-child(2){
+    background-image: url(Recursos/tailandia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*aqui he probado 1600px, 100% */
+    background-position: center center;
+  
+}
+.favoritos:nth-child(3){
+    background-image: url(Recursos/myanmar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*aqui he probado 1600px, 100% */
+    background-position: center center;
+    
+
+}
+.favoritos:nth-child(4){
+    background-image: url(Recursos/vietnam.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*aqui he probado 1600px, 100% */
+    background-position: center center;
+    
+ }
+
+#recomendaciones{
+    text-align: center;
+ 
+}
+#recomendaciones .container{
+    text-align: center;
+
+   
+}
+#recomendaciones li{
+    margin: 16px 0;
+}
+#preguntanos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0;
+
+}
+#preguntanos button{
+    font-size: 2em;
+}
+footer p{
+    color:rgb(116, 210, 199) ;
+
+}
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+    
