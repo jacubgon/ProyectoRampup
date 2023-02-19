@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <h1>MANTENTE INFORMADO</h1>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">ConUnPardeBotas!</p>
+            <nav>
+                <a href="#biografia">Sobre Nosotros(Biografia)</a>
+                <a href="#paises-favoritos">Nuestros Paises Favoritos</a>
+                <a href="#preguntanos">Viaja con nosotros</a>
+                <a href="#recomendaciones">Recomendaciones</a>
+            </nav>
+        </div>
+    </header>
+    <section id="portada">
+        <h1>CON UN PAR DE BOTAS!</h1>
+        <!-- <button>Pide Informacion</button> -->
+
+    </section>
+
+
+    <h1 class="newsletter">MANTENTE INFORMADO</h1>
 
     <h2>Suscríbete a nuestra newsletter y no te pierdas nada!</h2>
 
+    <section class="rellenar-formulario">
+        <h4>Formulario</h4>
+        <div class="rellenar-formulario">
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingresa tu Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingresa tu Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingresa tu Correo">
+            <a class=enviar-formulario href="gracias.html"><button>Enviar</button></a>
+        </div>
 
-    
-   Nombre: <input 
-    minlenght="4"
-    maxlenght="16" type="text"><br><br><br>
-
-    Apellido: <input 
-    minlenght="4"
-    maxlenght="16" type="text"><br><br><br>
+    </section>
 
 
-    Mail: <input 
-    minlenght="4"
-    maxlenght="16" type="text">
-    <br>
-
-    <br><form action="asasas">
-        <input type="submit" value="Enviar!">
-    </form>
-    
 </body>
-<footer></footer>
+<footer>
+    <div class="container">
+        <p>&copy; ConUnPardeBotas</p>
+    </div>
+</footer>
+
 </html>
